@@ -20,18 +20,17 @@ public class GithubCicdActionsApplication {
 	
 	@RequestMapping(
 		method = { RequestMethod.GET },
-		value = { "/gfg" })
+		value = { "/info" })
 
 	public String info()
 	{
 		String str2
 		    = "<html><body><font color=\"green\">"
-		      + "<h2>GeeksForGeeks is a Computer"
-		      + " Science portal for Geeks. "
-		      + "This portal has been "
-		      + "created to provide well written, "
-		      + "well thought and well explained "
-		      + "solutions for selected questions."
+		      + "<h2>Java-maven is a project"
+		      + " showing basic ci/cd pipeline development."
+		      + "This project has been "
+		      + "created by using gitHub actions, "
+		      + "& Docker hub."
 		      + "</h2></font></body></html>";
 		return str2;
 	}
