@@ -11,7 +11,29 @@ public class GithubCicdActionsApplication {
 
 	@GetMapping("/welcome")
 	public String welcome(){
-		return "Welcome to javatechie !";
+		String str
+		    = "<html><body><font color=\"green\">"
+		      + "<h1>WELCOME To java-maven</h1>"
+		      + "</font></body></html>";
+		return str;
+	}
+	
+	@RequestMapping(
+		method = { RequestMethod.GET },
+		value = { "/gfg" })
+
+	public String info()
+	{
+		String str2
+		    = "<html><body><font color=\"green\">"
+		      + "<h2>GeeksForGeeks is a Computer"
+		      + " Science portal for Geeks. "
+		      + "This portal has been "
+		      + "created to provide well written, "
+		      + "well thought and well explained "
+		      + "solutions for selected questions."
+		      + "</h2></font></body></html>";
+		return str2;
 	}
 
 //	echo "# github-actions-example" >> README.md
