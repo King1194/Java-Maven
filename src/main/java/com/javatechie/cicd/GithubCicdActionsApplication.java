@@ -11,28 +11,7 @@ public class GithubCicdActionsApplication {
 
 	@GetMapping("/welcome")
 	public String welcome(){
-		String str
-		    = "<html><body><font color=\"green\">"
-		      + "<h1>WELCOME To java-maven</h1>"
-		      + "</font></body></html>";
-		return str;
-	}
-	
-	@RequestMapping(
-		method = { RequestMethod.GET },
-		value = { "/info" })
-
-	public String info()
-	{
-		String str2
-		    = "<html><body><font color=\"green\">"
-		      + "<h2>Java-maven is a project"
-		      + " showing basic ci/cd pipeline development."
-		      + "This project has been "
-		      + "created by using gitHub actions, "
-		      + "& Docker hub."
-		      + "</h2></font></body></html>";
-		return str2;
+		return "Welcome to javatechie !";
 	}
 
 //	echo "# github-actions-example" >> README.md
